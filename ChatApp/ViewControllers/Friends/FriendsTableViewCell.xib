@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="KGk-i7-Jjw" customClass="FriendsTableViewCell" customModule="ChatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GBm-61-YWW">
+                        <rect key="frame" x="5" y="2" width="42" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="vxD-R7-dMs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kns-9a-Vyy">
+                        <rect key="frame" x="60" y="3" width="155" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="155" id="7Zc-eb-VwF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQU-CJ-c5w">
+                        <rect key="frame" x="60" y="24" width="30.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXd-Pe-KKE">
+                        <rect key="frame" x="223" y="11" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="GLm-Hf-Ina"/>
+                            <constraint firstAttribute="width" constant="22" id="KeA-C1-cOz"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <action selector="InforButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1ia-bT-ZFf"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nQU-CJ-c5w" firstAttribute="top" secondItem="Kns-9a-Vyy" secondAttribute="bottom" constant="4" id="DGe-tN-s9C"/>
+                    <constraint firstItem="Kns-9a-Vyy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="Gk8-Co-VvC"/>
+                    <constraint firstItem="vXd-Pe-KKE" firstAttribute="leading" secondItem="Kns-9a-Vyy" secondAttribute="trailing" constant="8" id="Mg4-ol-6yd"/>
+                    <constraint firstItem="vXd-Pe-KKE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bSb-IQ-sUF"/>
+                    <constraint firstItem="nQU-CJ-c5w" firstAttribute="leading" secondItem="GBm-61-YWW" secondAttribute="trailing" constant="13" id="caF-bG-ATd"/>
+                    <constraint firstAttribute="bottom" secondItem="GBm-61-YWW" secondAttribute="bottom" constant="3.5" id="kKD-sk-aPy"/>
+                    <constraint firstItem="GBm-61-YWW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="ldE-tV-oAG"/>
+                    <constraint firstAttribute="trailing" secondItem="vXd-Pe-KKE" secondAttribute="trailing" constant="8" id="pTm-n8-he3"/>
+                    <constraint firstItem="GBm-61-YWW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="tac-fZ-JFc"/>
+                    <constraint firstItem="Kns-9a-Vyy" firstAttribute="leading" secondItem="GBm-61-YWW" secondAttribute="trailing" constant="13" id="vu3-WW-J8l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnInfo" destination="vXd-Pe-KKE" id="Da6-C1-ceo"/>
+                <outlet property="lblAlias" destination="Kns-9a-Vyy" id="vRP-J8-UcT"/>
+                <outlet property="lblLastScene" destination="nQU-CJ-c5w" id="W90-Zz-fM9"/>
+                <outlet property="profileImage" destination="GBm-61-YWW" id="5c7-CV-U9h"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </tableViewCell>
+    </objects>
+</document>

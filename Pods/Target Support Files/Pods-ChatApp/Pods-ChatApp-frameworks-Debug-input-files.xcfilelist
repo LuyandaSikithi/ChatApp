@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-ChatApp/Pods-ChatApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/StatusAlert/StatusAlert.framework
+${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework
